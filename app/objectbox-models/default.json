@@ -1,0 +1,154 @@
+{
+  "_note1": "KEEP THIS FILE! Check it into a version control system (VCS) like git.",
+  "_note2": "ObjectBox manages crucial IDs for your object model. See docs for details.",
+  "_note3": "If you have VCS merge conflicts, you must resolve them according to ObjectBox docs.",
+  "entities": [
+    {
+      "id": "1:3136168105067861497",
+      "lastPropertyId": "5:982128293901440425",
+      "name": "ProductEntity",
+      "properties": [
+        {
+          "id": "1:343488457654914765",
+          "name": "id",
+          "type": 6,
+          "flags": 129
+        },
+        {
+          "id": "2:7479914516345232395",
+          "name": "name",
+          "type": 9
+        },
+        {
+          "id": "3:4084325700624013863",
+          "name": "images",
+          "type": 30
+        },
+        {
+          "id": "4:8436816898632406892",
+          "name": "description",
+          "type": 9
+        },
+        {
+          "id": "5:982128293901440425",
+          "name": "price",
+          "type": 8
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "2:5349205716999181910",
+      "lastPropertyId": "5:8438646121515034460",
+      "name": "CartEntity",
+      "properties": [
+        {
+          "id": "1:5815808802694488702",
+          "name": "id",
+          "type": 6,
+          "flags": 129
+        },
+        {
+          "id": "2:4980743987955924280",
+          "name": "name",
+          "type": 9
+        },
+        {
+          "id": "3:1054594752456089652",
+          "name": "images",
+          "type": 30
+        },
+        {
+          "id": "4:9054585047690820444",
+          "name": "description",
+          "type": 9
+        },
+        {
+          "id": "5:8438646121515034460",
+          "name": "price",
+          "type": 8
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "3:6682621350120799141",
+      "lastPropertyId": "5:30530793539100705",
+      "name": "AddressEntity",
+      "properties": [
+        {
+          "id": "1:1697896731029324218",
+          "name": "id",
+          "type": 6,
+          "flags": 129
+        },
+        {
+          "id": "2:7203037237817833359",
+          "name": "street",
+          "type": 9
+        },
+        {
+          "id": "3:8963687809205200997",
+          "name": "number",
+          "type": 9
+        },
+        {
+          "id": "4:5424877201075379531",
+          "name": "city",
+          "type": 9
+        },
+        {
+          "id": "5:30530793539100705",
+          "name": "zipcode",
+          "type": 9
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "4:1572293814247858123",
+      "lastPropertyId": "5:5605898510896867606",
+      "name": "CardEntity",
+      "properties": [
+        {
+          "id": "1:3910446241948086521",
+          "name": "id",
+          "type": 6,
+          "flags": 129
+        },
+        {
+          "id": "2:3234503332765930965",
+          "name": "titular",
+          "type": 9
+        },
+        {
+          "id": "3:3000694682922576811",
+          "name": "number",
+          "type": 9
+        },
+        {
+          "id": "4:3699335035667041251",
+          "name": "expireDate",
+          "type": 9
+        },
+        {
+          "id": "5:5605898510896867606",
+          "name": "cvv",
+          "type": 9
+        }
+      ],
+      "relations": []
+    }
+  ],
+  "lastEntityId": "4:1572293814247858123",
+  "lastIndexId": "0:0",
+  "lastRelationId": "0:0",
+  "lastSequenceId": "0:0",
+  "modelVersion": 5,
+  "modelVersionParserMinimum": 5,
+  "retiredEntityUids": [],
+  "retiredIndexUids": [],
+  "retiredPropertyUids": [],
+  "retiredRelationUids": [],
+  "version": 1
+}

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/iv_back"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/back_arrow"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"/>
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_back"
+        android:text="SMain payment"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_card_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_title"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp">
+        <ImageView
+            android:id="@+id/iv_card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/card_icon"/>
+
+        <TextView
+            android:id="@+id/tv_card_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_toRightOf="@+id/iv_card"
+            android:layout_centerVertical="true"
+            android:text="****2341"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_delivery"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_card_data"
+        android:layout_marginStart="20dp">
+
+        <LinearLayout
+            android:id="@+id/ll_delivery_free"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/iv_deliver"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/deliver_icon"/>
+
+            <TextView
+                android:id="@+id/tv_deliver_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_gravity="center_vertical"
+                android:text="Envio gratis"
+                android:textColor="@color/green"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ll_delivery_free"
+            android:orientation="vertical"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp">
+            <TextView
+                android:id="@+id/tv_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_below="@+id/iv_deliver"
+                android:text="El envio se realizara a la direccion que gurado"/>
+
+
+            <TextView
+                android:id="@+id/tv_street"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Calle:"/>
+
+            <TextView
+                android:id="@+id/tv_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Numero"/>
+
+            <TextView
+                android:id="@+id/tv_city"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_number"
+                android:text="Ciudad: "/>
+
+            <TextView
+                android:id="@+id/tv_zipcode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_city"
+                android:text="Codigo postal:"/>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_total_pay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_below="@+id/rl_delivery"
+        android:layout_centerHorizontal="true"
+        android:text="Total a pagar 100"
+        android:textStyle="bold"/>
+
+
+    <Button
+        android:id="@+id/btn_pay_now"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="10dp"
+        android:backgroundTint="@color/gray"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="Pay" />
+</RelativeLayout>
